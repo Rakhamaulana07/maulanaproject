@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8EE97">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="MARI! CARI ALAMAT"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lokasi Awal Anda"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/etAwal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Lokasi Awal..."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lokasi Tujuan Anda"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/etTujuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Lokasi Tujuan..."/>
+
+            <Button
+                android:id="@+id/btnJalur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:backgroundTint="#08A20E"
+                android:text="LIHAT JALUR" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/akupergi"
+        android:src="@drawable/img"
+        android:layout_width="180dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:contentDescription="ClickableImage"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Utamakan berdoa sebelum memulai perjalanan🤲"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+
+</LinearLayout>

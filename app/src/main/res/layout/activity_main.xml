@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDE406"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:text="Selamat Datang di MARI!"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="50dp"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/Logo"
+                android:src="@drawable/img_1"
+                android:layout_width="170dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:contentDescription="ClickableImage"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <Button
+                android:id="@+id/btncall"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:layout_marginTop="300dp"
+                android:backgroundTint="#016D05"
+                android:text="MARI BERHITUNG" />
+
+            <Button
+                android:id="@+id/btnmove"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:layout_marginTop="300dp"
+                android:backgroundTint="#008505"
+                android:text="MARI CARI ALAMAT" />
+
+            <Button
+                android:id="@+id/btnshare"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:layout_marginTop="300dp"
+                android:backgroundTint="#039D09"
+                android:text="MARI BERBAGI" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="15dp"
+                android:textSize="18dp"
+                android:text="MARI kita berdoa sebelum memulai sesuatu🤲"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
